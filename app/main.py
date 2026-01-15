@@ -18,7 +18,7 @@ def check():
 def chat(request:chatreq):
     question=request.question.lower()
     if is_weather(question):
-        for city in['bengaluru','delhi','mumbai']:
+        for city in['bengaluru','delhi','mumbai','hyderabad','chennai']:
             if city in question:
                 weather=get_data(city)
                 if weather:
@@ -62,47 +62,6 @@ def chat(request:chatreq):
 
 
    
-# @app.post("/chat", response_model=chatres)
-# def chat(request: chatreq):
-#     question = request.question.lower()
 
-#     if is_weather(question):
-#         # CITY_ALIASES = {
-#         #     "bangalore": "bengaluru",
-#         #     "bengaluru": "bengaluru",
-#         #     "delhi": "delhi",
-#         #     "mumbai": "mumbai"
-#         # }
 
-#         for word in question.replace("?", "").split():
-#             city = CITY_ALIASES.get(word)
-#             if city:
-#                 weather = get_data(city)
-#                 if weather:
-#                     return chatres(
-#                         tool_used="Weather API",
-#                         response=(
-#                             f"Weather in {city.title()}:\n"
-#                             f"Temperature: {weather['temperature']}, "
-#                             f"Humidity: {weather['humidity']}, "
-#                             f"Condition: {weather['condition']}"
-#                         ),
-#                         retrieved_context=None
-#                     )
-
-#         return chatres(
-#             tool_used="Weather API",
-#             response="City not found",
-#             retrieved_context=None
-#         )
-
-#     return chatres(
-#         tool_used="None",
-#         response=f"You asked: {request.question}",
-#         retrieved_context=None
-#     )
-
-                    
-
-    
 
