@@ -1,0 +1,8 @@
+Cybersecurity awareness focuses on educating users about common cyber threats such as phishing, malware, ransomware, and social engineering attacks. 
+Human error remains one of the leading causes of security breaches across organizations.
+
+Basic security practices include using strong passwords, enabling multi-factor authentication, and avoiding suspicious links or email attachments. 
+Organizations often conduct regular training sessions and simulated phishing campaigns to improve employee awareness.
+
+With the rise of remote work and cloud-based systems, cybersecurity awareness has become a shared responsibility between IT teams and end users. 
+Well-documented security guidelines help reduce risk and improve organizational resilience.
